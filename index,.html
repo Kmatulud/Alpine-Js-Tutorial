@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Alpine JS</title>
+</head>
+<body>
+<div x-data="{ title: 'Hello Alpine' }">
+    <p x-text="title"></p>
+    <button @click="title='Alpine Rocks!'">Click me</button>
+</div>
+<div x-data="{count:1}">
+<p x-text="count"></p>
+<button @click="count++">Count Up</button>
+<button @click="count--">Count Down</button>
+</div>
+</body>
+</html>
